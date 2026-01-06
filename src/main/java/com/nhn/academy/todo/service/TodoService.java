@@ -1,10 +1,6 @@
 package com.nhn.academy.todo.service;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
 import com.nhn.academy.todo.model.Todo;
 import com.nhn.academy.todo.model.Category.Category1;
@@ -44,16 +40,5 @@ public class TodoService {
                 System.out.println("["+(j+1)+"] "+todoList.get(j).toString());
             } 
         }
-    }
-
-    
-
-    public List<Todo> getOverDue(){
-        LocalDate today = LocalDate.now();
-
-        return todoList.stream()
-            .filter(todo -> !todo.isDone())
-            .filter(todo -> todo.getDueDate().isBefore(today))
-            .collect(Collectors.toList());
     }
 }
