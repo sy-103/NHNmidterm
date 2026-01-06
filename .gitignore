@@ -1,0 +1,4 @@
+*.class
+target/
+todo.csv
+.DS_Store
