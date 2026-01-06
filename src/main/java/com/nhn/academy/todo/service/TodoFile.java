@@ -7,7 +7,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-
+import java.util.List;
 
 import com.nhn.academy.todo.model.Todo;
 import com.nhn.academy.todo.model.Category.Category1;
@@ -15,10 +15,10 @@ import com.nhn.academy.todo.model.Priority.Priority1;
 
 public class TodoFile {
     private String filename;
-    private ArrayList<Todo> arr1;
+    private List<Todo> arr1;
     private int nextId;
 
-    public TodoFile(String filename, ArrayList<Todo> arr1){
+    public TodoFile(String filename, List<Todo> arr1){
         this.filename=filename;
         this.arr1=arr1;
         this.nextId=nextId;

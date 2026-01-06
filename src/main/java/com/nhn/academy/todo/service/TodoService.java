@@ -10,9 +10,9 @@ import com.nhn.academy.todo.model.Category.Category1;
 import com.nhn.academy.todo.model.Priority.Priority1;
 
 public class TodoService {
-    private ArrayList<Todo> todoList;
+    private List<Todo> todoList;
 
-    public TodoService(ArrayList<Todo> todoList){
+    public TodoService(List<Todo> todoList){
         this.todoList=todoList;
     }
 

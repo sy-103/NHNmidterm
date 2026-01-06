@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
 import com.nhn.academy.todo.exception.TodoNotFoundException;
 import com.nhn.academy.todo.model.Todo;
@@ -16,7 +17,7 @@ import com.nhn.academy.todo.service.TodoFile;
 public class Main {
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        ArrayList<Todo> arr1 = new ArrayList<>();
+        List<Todo> arr1 = new ArrayList<>();
         TodoService service = new TodoService(arr1);
         TodoFile todoFile = new TodoFile("todos.csv",arr1);
 
