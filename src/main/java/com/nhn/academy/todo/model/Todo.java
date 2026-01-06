@@ -1,5 +1,4 @@
 package com.nhn.academy.todo.model;
-import java.time.LocalDate;
 
 import com.nhn.academy.todo.model.Category.Category1;
 import com.nhn.academy.todo.model.Priority.Priority1;
@@ -13,7 +12,6 @@ public class Todo {
     private boolean done;
     private Category1 category;
     private Priority1 priority;
-    private LocalDate dueDate;
 
     public Todo(){
         this.id=0;
@@ -65,9 +63,5 @@ public class Todo {
             status="[미완료]";
         }
         return getTitle()+" | "+ getHours()+"시간 | "+ getCategory()+" | "+ getPriority()+ " | "+status;
-    }
-
-    public LocalDate getDueDate(){
-        return dueDate;
     }
 }
